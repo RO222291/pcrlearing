@@ -23,3 +23,7 @@ Upload `index.html`, `.nojekyll`, `README.md` and `website-source.zip` to the re
 Uses `learning-grove.v1` in localStorage. Correct answers complete lessons once; repeat practice can extend the local-calendar daily streak. Incorrect answers and manually saved lessons appear in My review. Correct answers clear that lesson from review. Passport backup/restore works across browsers, merging saved progress. No account, analytics, external fonts, video embeds or server calls are used by the learning app.
 
 Previous Wanyao directory versions remain available in Git history.
+
+## Validation
+
+All 48 lesson routes were checked for three answer choices, question text and mobile overflow. Incorrect-answer retry, lesson completion, a six-lesson path stamp, persisted progress after reload, and backup merging were verified in the browser. The September 11 publication retries a GitHub Pages deployment timeout; the learning content is unchanged.
