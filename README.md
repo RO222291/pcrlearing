@@ -1,29 +1,19 @@
-# Learning Grove
+# 萬妖文書版｜中英對照 / Wanyao Learning Archive
 
-Live website: https://ro222291.github.io/pcrlearing/
+https://ro222291.github.io/pcrlearing/
 
-An independent English-first learning website: eight paths, 48 original introductory mini-lessons, practice feedback, review list, eight completion stamps, a daily streak, and a local learning passport.
+Restores the copied Chinese learning directory, original eight station descriptions, station links, screenshots, QR codes, videos and passport link. English translations are shown on separate lines immediately beneath the Chinese. The palette uses ROKOHCHA #74673E from https://nipponcolors.com/#rokohcha with warm-paper supporting colors.
 
-Chinese learning material includes pinyin and English meanings. Navigation and all guidance are in English. This is a new starter curriculum; it does not claim to include the earlier external sites' complete content, cloud accounts, multiplayer systems, or saved progress.
+The earlier independent Learning Grove curriculum is not used on this homepage. Previous versions remain in Git history.
 
-## Style
+## Scope
 
-ROKOHCHA (#74673E), verified from https://nipponcolors.com/#rokohcha, with warm-white, sage and dark-earth supporting colors. System sans-serif fonts; responsive layouts; visible keyboard focus; reduced-motion support.
+This repository contains the directory. The linked passport and eight learning websites are separate external sites. Their Chinese lessons and interfaces have not been translated or recolored by this repository. Screenshots and videos retain their original source language; their labels and the directory's explanatory text are bilingual.
 
-## Source and build
+## Editable source
 
-Unzip `website-source.zip`. `index.html` is the page shell, `style.css` provides the theme, `data.js` contains all lessons, and `app.js` handles navigation, practice and passport storage. Run `python3 -m http.server 8000` in the extracted directory to preview. Run `python3 build.py` to create a standalone publication in the sibling `pcrlearing-publish` directory.
+Extract website-source.zip. Edit index.html, css/style.css, data/sites.js and js/*.js. The source is static and can be previewed using python3 -m http.server 8000. Chinese text and English translations are paired with ` / ` in source data; js/bilingual.js displays each pair as separate language-tagged lines.
 
-## Publish
+## Deployment
 
-Upload `index.html`, `.nojekyll`, `README.md` and `website-source.zip` to the repository root. GitHub Pages uses `main` and `/ (root)` with HTTPS. No workflow or build service is needed.
-
-## Progress
-
-Uses `learning-grove.v1` in localStorage. Correct answers complete lessons once; repeat practice can extend the local-calendar daily streak. Incorrect answers and manually saved lessons appear in My review. Correct answers clear that lesson from review. Passport backup/restore works across browsers, merging saved progress. No account, analytics, external fonts, video embeds or server calls are used by the learning app.
-
-Previous Wanyao directory versions remain available in Git history.
-
-## Validation
-
-All 48 lesson routes were checked for three answer choices, question text and mobile overflow. Incorrect-answer retry, lesson completion, a six-lesson path stamp, persisted progress after reload, and backup merging were verified in the browser. The September 11 publication retries a GitHub Pages deployment timeout; the learning content is unchanged.
+GitHub Pages publishes main from / (root). The uploaded index.html embeds all scripts, CSS and images. .nojekyll disables Jekyll. Original analytics counters are removed. Original Chinese content and media retain their original authorship.
