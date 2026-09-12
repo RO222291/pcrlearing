@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>步學吾數・奧林帕斯數術神殿 / Step into Mathematics</title>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&amp;display=swap" />
+  <link rel="stylesheet" href="math.css?v=9b4a36ff62" />
+  <script src="https://xuexi-hangzhan-api.hk6429.workers.dev/naicheng-sso.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#view-home">跳到主要內容</a>
+  <header class="topbar">
+    <h1>步學吾數</h1>
+    <nav class="topbar-nav"><a href="./">返回學習入口 / Learning Directory</a>
+      <button id="nav-home" aria-current="page" title="回到神話星圖，開始練習"><span class="nav-icon" aria-hidden="true">🗺️</span>神話星圖</button>
+      <button id="nav-workshop" title="五座神殿：挑戰守護者 Boss 戰"><span class="nav-icon" aria-hidden="true">🏛️</span>五座神殿</button>
+      <button id="nav-fusion" title="星靈融合殿：把數字融合成新星靈、逛班級市集"><span class="nav-icon" aria-hidden="true">✨</span>星靈融合殿</button>
+      <button id="nav-sanctuary" title="繆思聖所：用精熟度佈置你的神殿"><span class="nav-icon" aria-hidden="true">🏺</span>繆思聖所</button>
+      <button id="nav-arena" title="神殿競技場：和同學比速度與正確率"><span class="nav-icon" aria-hidden="true">⚔️</span>神殿競技場</button>
+      <button id="nav-dashboard" title="我的儀表板：看進度與弱點"><span class="nav-icon" aria-hidden="true">📊</span>我的儀表板</button>
+      <a class="teacher-link" href="math-teacher.html">教師成果頁</a>
+      <button id="nav-sfx" class="nav-sfx" aria-label="音效開關" aria-pressed="false">🔇</button>
+      <details id="accessibility-settings" class="accessibility-settings">
+        <summary aria-label="輔助設定">Aa</summary>
+        <div class="accessibility-settings-panel">
+          <fieldset><legend>全站字級</legend>
+            <label><input type="radio" name="font-size" value="standard">標準</label>
+            <label><input type="radio" name="font-size" value="large">大</label>
+            <label><input type="radio" name="font-size" value="xlarge">特大</label>
+          </fieldset>
+          <label class="setting-check"><input id="setting-sprint-warning" type="checkbox">顯示疾筆倒數紅色閃動警示</label>
+          <label class="setting-check"><input id="setting-combo-break" type="checkbox">顯示連詠中斷視覺效果</label>
+          <label class="setting-check"><input id="setting-haptics" type="checkbox">開啟手機震動回饋（觸覺敏感可關閉）</label>
+        </div>
+      </details>
+    </nav>
+  </header>
+  <div id="toast-live" role="status" aria-live="polite" class="visually-hidden"></div>
+
+  <main>
+    <section id="view-home" class="view active" aria-labelledby="home-heading">
+      <h2 id="home-heading" class="visually-hidden" tabindex="-1">神話星圖</h2>
+      <section id="mythos-lore" class="mythos-lore" aria-labelledby="mythos-lore-heading">
+        <details class="mythos-lore-details">
+          <summary><span id="mythos-lore-heading">奧林帕斯的五座神殿等你用數學喚醒</span><span class="mythos-lore-action"><span class="lore-open-label">展開故事</span><span class="lore-close-label">收合故事</span></span></summary>
+          <div class="mythos-lore-body">
+            <figure class="mythos-style-figure">
+              <img id="mythos-style-guide" data-math-src="assets/mythos/style-guide.png" alt="奧林帕斯數術神殿世界觀與角色風格總覽" loading="lazy" decoding="async" />
+            </figure>
+            <div class="mythos-lore-copy">
+              <h3>奧林帕斯數術神殿</h3>
+              <p>傳說奧林帕斯的智慧之火曾照亮每一條數術之路，直到混沌之霧封住五片領地。迷宮地底城的米諾陶洛斯守護數與量，斯芬克斯神殿以謎題考驗代數；獨眼巨人鍛造坊把空間與形狀鑄成精準器物，命運三女神紡織殿將關係與規律編入命線，德爾菲神諭殿則由皮媞亞與巨蟒辨讀資料與可能性。雅典娜派出五位智慧引路人，陪伴學徒閱讀神諭卷軸、破解題目，逐步喚醒沉睡的神殿。每一次計算、每一次驗證，都會留下神話印記；當五座神殿重新發光，學徒也將明白，真正的神力不是猜中答案，而是能說清楚自己的思考，並願意從錯誤中再走一步。在「步學吾數」，你不必一口氣征服整座奧林帕斯；只要今天比昨天多點亮一小段路，智慧女神的火炬就會始終在前方等你。</p>
+            </div>
+          </div>
+        </details>
+      </section>
+      <div id="skilltree-container" class="skilltree"></div>
+    </section>
+
+    <section id="view-quiz" class="view" aria-labelledby="quiz-node-name">
+      <h2 id="quiz-node-name" tabindex="-1">神諭卷軸練功</h2>
+      <span id="quiz-streak"></span>
+      <div id="quiz-progressbar" class="quiz-progressbar" role="progressbar" aria-valuemin="1" aria-valuemax="1" aria-valuenow="1" aria-label="第 1 題，共 1 題"></div>
+      <div id="quiz-live" role="status" aria-live="polite" class="visually-hidden"></div>
+      <div id="quiz-area"></div>
+    </section>
+
+    <section id="view-dashboard" class="view" aria-labelledby="dashboard-heading">
+      <h2 id="dashboard-heading" class="visually-hidden" tabindex="-1">我的儀表板</h2>
+      <div id="dashboard-content"></div>
+    </section>
+
+    <section id="view-workshop" class="view" aria-labelledby="workshop-heading">
+      <h2 id="workshop-heading" class="visually-hidden" tabindex="-1">奧林帕斯五座神殿</h2>
+      <div id="workshop-content"></div>
+    </section>
+
+    <section id="view-fusion" class="view" aria-labelledby="fusion-heading">
+      <h2 id="fusion-heading" class="visually-hidden" tabindex="-1">星靈融合殿</h2>
+      <div id="fusion-content"></div>
+    </section>
+
+    <section id="view-sanctuary" class="view" aria-labelledby="sanctuary-heading">
+      <h2 id="sanctuary-heading" class="visually-hidden" tabindex="-1">繆思聖所</h2>
+      <div id="sanctuary-content"></div>
+    </section>
+
+    <section id="view-arena" class="view" aria-labelledby="arena-heading">
+      <h2 id="arena-heading" class="visually-hidden" tabindex="-1">神殿競技場</h2>
+      <div id="arena-content"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <details class="parents-note" id="parents-note">
+      <summary>給家長與老師</summary>
+      <div class="parents-note-body">
+        <p><strong>這是一個給孩子練數學的遊戲，沒有帳號、沒有廣告、沒有內購。</strong></p>
+        <ul>
+          <li><strong>資料只存在這台裝置</strong>：所有學習進度、收藏與紀錄都存在瀏覽器本機（localStorage），我們的伺服器不保存孩子的個人學習資料。換裝置可用儀表板的「神使行囊」匯出／匯入。</li>
+          <li><strong>沒有真實金流</strong>：遊戲裡的「星屑」「星靈」「市集」全是虛擬的，且獎勵綁在「真的答對、真的精熟」上，不是登入天數或點擊次數。</li>
+          <li><strong>連續紀錄與排行榜的設計</strong>：連續紀錄採「只加不罰、斷了不清零」，不製造每日打卡壓力；競技場／班級排行榜是同學互相回報、未經嚴格驗證，僅供老師與家長參考。倒數警示與手機震動都可在右上角「Aa」設定關閉。</li>
+          <li><strong>計數器只記造訪數</strong>：頁面右下的訪客計數只統計造訪次數，不記錄任何個人資訊。</li>
+        </ul>
+        <button type="button" id="clear-local-data" class="parents-clear-btn">清除這台裝置上的所有學習資料</button>
+        <p class="parents-clear-note" id="clear-local-data-note" role="status"></p>
+      </div>
+    </details>
+  </footer>
+
+  <div id="tip-bubble-root"></div>
+  <img data-math-src="assets/deco/quill.png" class="quill-deco" alt="" loading="lazy" decoding="async" />
+
+  
+
+  
+  
+  
+<script src="math-assets-1.js?v=cfdaf8c149"></script>
+<script src="math-assets-2.js?v=dcce5ee3ed"></script>
+<script src="math-assets-3.js?v=b293b37b81"></script>
+<script src="math-assets-4.js?v=6dd4e45bd1"></script>
+<script src="math-data.js?v=b7c9df17a8"></script>
+<script src="math-en.js?v=d4c27fc9a0"></script>
+<script src="math-runtime.js?v=c632b8896b"></script>
+<script type="module" src="math-app.js?v=b73f210156"></script>
+</body>
+</html>

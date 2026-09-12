@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>步學吾數・教師班級成果 / Step into Mathematics</title>
+  <link rel="stylesheet" href="math.css?v=9b4a36ff62" />
+</head>
+<body class="teacher-page">
+  <header class="topbar"><h1>步學吾數・教師班級成果</h1><nav><a href="math.html">返回學生頁</a></nav></header>
+  <main class="teacher-main">
+    <section class="teacher-panel" aria-labelledby="teacher-heading">
+      <h2 id="teacher-heading">班級每週成果</h2>
+      <p>輸入班級代碼與週次，讀取既有每週學院盃資料；本頁不需要帳號。</p>
+      <form id="teacher-query">
+        <label>班級代碼 <input id="teacher-room-code" required maxlength="40" autocomplete="off"></label>
+        <label>週次 <input id="teacher-week" required pattern="\d{4}W\d{2}" placeholder="2026W29"></label>
+        <button type="submit">查詢班級成果</button>
+      </form>
+      <div class="teacher-actions">
+        <button id="teacher-copy-room" type="button">複製班級代碼分享文字</button>
+        <button id="teacher-export-csv" type="button" disabled>匯出 CSV</button>
+      </div>
+      <p id="teacher-status" role="status" aria-live="polite"></p>
+      <div class="teacher-table-wrap"><table id="teacher-results"><thead><tr><th>姓名</th><th>正確率</th><th>作答時間</th><th>可疑標記</th></tr></thead><tbody></tbody></table></div>
+    </section>
+  </main>
+  
+<script src="math-assets-1.js?v=cfdaf8c149"></script>
+<script src="math-assets-2.js?v=dcce5ee3ed"></script>
+<script src="math-assets-3.js?v=b293b37b81"></script>
+<script src="math-assets-4.js?v=6dd4e45bd1"></script>
+<script src="math-data.js?v=b7c9df17a8"></script>
+<script src="math-en.js?v=d4c27fc9a0"></script>
+<script src="math-runtime.js?v=c632b8896b"></script>
+<script type="module" src="math-teacher.js?v=f87baaaa3e"></script>
+</body>
+</html>
